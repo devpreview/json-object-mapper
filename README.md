@@ -9,6 +9,8 @@ The idea behind this is that you do not need to add serialization and
 de-serialization methods to each of your DTO classes - thus keeping them clean 
 and simple.
 
+[![Build Status](https://travis-ci.org/shakilsiraj/json-object-mapper.svg?branch=master)](https://travis-ci.org/shakilsiraj/json-object-mapper)
+
 ## Usage
 
 The core of the library is the `ObjectMapper` class which essentially serializes and
@@ -94,6 +96,7 @@ class SimpleClass {
     @JsonProperty({ type: String, name: "AKA" })
     knownAs: String[] = ["John", "Doe", "JohnDoe", "JohnPDoe"]
 };
+
 
 let instance: SimpleClass = new SimpleClass();
 
